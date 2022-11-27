@@ -1,0 +1,265 @@
+* {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: white; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*==============MOVIL=====================*/
+@media (min-width:0px) {
+  header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.552), rgba(0, 0, 0, 0.609)),
+      url("../img/foto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 75vh;
+    /* position: relative; */
+    overflow: hidden;
+  }
+  header nav#lineal {
+    display: none;
+  }
+
+  .titulo {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    /* height: 65vh; */
+    /* background-color: red; */
+    color: white;
+    padding-top: 15vh;
+    font-size: 30px;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+  }
+  .titulo h1 {
+    /* background-color: red; */
+    text-align: center;
+    width: 98%;
+  
+  }
+  
+  .titulo i {
+    margin-right: 20px;
+    color: white;
+  }
+  
+  main section {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+  main section article {
+    width: 100%;
+    padding: 20px;
+    background-color: none;
+    /* border: 2px solid black; */
+  }
+  main button{
+      background: transparent;
+      border: none;
+      font-size: 30px;
+      background-color:rgb(212, 211, 211);
+      box-shadow: 20,10,10,10;
+      cursor: pointer;
+      border-radius: 15px;
+      margin-top:10px ;
+      margin-left:10px ;
+      margin-right:10px ;
+      padding: 10px;
+      width: 50px;
+  }
+  main button:focus, main button:hover{
+      background-color:lightsalmon;
+      transition: .2s ;
+  }
+ 
+  .claro {
+    background-color: #1f1f1f;
+    color: white;
+    transition: 0.8s;
+  }
+  .oscuro {
+    background-color: whitesmoke;
+    color: black;
+    transition: 0.8s;
+    
+  }
+    
+  #check{
+    display: none;
+  }
+    .checkbtn{/*las 3 barras*/
+        display: block;
+        color: white;
+        font-size: 30px;
+        padding: 10px;
+        position: absolute;
+        z-index: 5;
+        cursor: pointer;
+    }
+    ul{
+        position: absolute;
+        width: 100%;
+        height: 75vh;
+        background-color: #1f1f1f0b;
+        backdrop-filter: blur(10px);
+        /* top: 80px; */
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 4;
+        display: flex;
+        padding-top:30px ;
+        padding-left: 30px;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-flow: column nowrap;
+    }
+    nav ul li{
+        display: block;
+        /* margin: 50px 0; */
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        color: white;
+    }
+    
+    #check:checked ~ ul{
+        left:0;
+    }
+  article#estud{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  article#estud figure{
+    height: 45vh;
+  }
+  article#proyec{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  article#proyec figure{
+    width: 100%;
+    height: 200px;
+  }
+  article#proyec h1{
+    font-size: 20px;
+  }
+  .container {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 25px;
+  }
+  figure#marserena{
+    width: 90%;
+  }
+  figure#curavalera{
+    width: 90%;
+  }
+  .capa a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    position: absolute;
+  
+  }.container img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+    background-size: cover;
+    
+  }
+  .capa {
+    background-color: rgba(0, 0, 0, 0.258);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+  }
+  
+  
+  .container:hover img {
+    transform: scale(1.09);
+  }
+  .container:hover .capa {
+    top: 0;
+  }
+  article h1{
+    font-size: 30px;
+  }
+}
+
+/*==============TABLET=====================*/
+@media (min-width:650px) {
+  article#proyec figure{
+    height: 300px;
+    
+  }
+  nav#burger{
+    display: none;
+  }
+  header nav#lineal{
+    display: block;
+  }
+  header nav#lineal {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    /* position: fixed; */
+    /* backdrop-filter: blur(10px); */
+    height: 50px;
+  }
+  header nav#lineal a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+    height: max-content; 
+  }
+  
+  
+}
+/*===============DESKTOP====================*/
+@media (min-width:900px) {
+  main section article{
+    width: 60%;
+  }
+  article#estud figure{
+    height: 50vh;
+    width: 45%;
+  }
+  article#proyec figure{
+
+    height: 55vh;
+  }
+  
+}
