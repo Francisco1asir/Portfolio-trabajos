@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="./css/hover.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="./img/icono.jpg" type="image/x-icon">
+
+
+    <title>Mi Portfolio</title>
+</head>
+
+<body>
+    <header>
+       
+
+        <nav id="burger">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <ul>
+                <li class="hvr-forward"><a href="#Inicio"><i class="fa-solid fa-house"></i><span>Inicio</span></a></li>
+                <li class="hvr-forward"><a href="#Estudios"><i
+                            class="fa-solid fa-graduation-cap"></i><span>Estudios</span></a></li>
+                <li class="hvr-forward"><a href="#Sobre"><i class="fa-solid fa-user"></i><span>Sobre mí</span></a></li>
+                <li class="hvr-forward"><a href="#Proyectos"><i
+                            class="fa-solid fa-briefcase"></i><span>Proyectos</span></a></li>
+                <li class="hvr-forward"><a href="#Aficiones"><i
+                            class="fa-solid fa-face-smile"></i><span>Aficiones</span></a></li>
+
+            </ul>
+        </nav>
+
+        <nav id="lineal">
+            <a href="#Inicio" class="hvr-buzz">Inicio</a>
+            <a href="#Estudios" class="hvr-buzz">Estudios</a>
+            <a href="#Sobre" class="hvr-buzz">Sobre mí</a>
+            <a href="#Proyectos" class="hvr-buzz">Proyectos</a>
+            <a href="#Aficiones" class="hvr-buzz">Aficiones</a>
+        </nav>
+
+        <div class="titulo">
+            <h1 class="hvr-rotate">Mi Portfolio</h1>
+            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.twitch.tv/franh90p"><i class="fa-brands fa-twitch"></i></a>
+            <a href="https://www.instagram.com/im_the90p/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/Francisco1asir/Mis-Proyectos"> <i class="fa-brands fa-github"></i></a>
+        </div>
+    </header>
+    <main>
+        <button onclick="lightMode()"><i class="fa-solid fa-sun"></i></button>
+        <button onclick="darkMode()"><i class="fa-solid fa-moon"></i></button>
+
+        <section>
+            <article>
+                <a name="Inicio"></a>
+                <h1>Inicio</h1>
+                <p>En este portfolio se va a reflejar información sobre el estudiante Francisco Parra Navarro, este
+                    porfolio está realizado con HTML, CSS y con un poquito de JavaScript aunque en el futuro no se
+                    descarta la necesidad de añadir otro tipo de lenguajes de programación o incluso bases de datos. La
+                    fecha de creación de este portfolio es el 19/11/2022 y se sigue actualizando con los días. Se
+                    pretende subir este porfolio a una VPS o dominio público para que se visible por todo el mundo </p>
+<!-- <img src="./img/saludo.gif"> -->
+            </article>
+            <article>
+                <a name="Sobre"></a>
+                <h1>Sobre mí</h1>
+                <p>Francisco Parra Navarro es una persona que nació el 19 de Agosto de 2003 en el hospital de Huercal
+                    Overa, actualmente reside en La Fuente/Pulpí. El sueño de Francisco es trabajar algún día como
+                    informatico o programador ya que le encanta mucho la informática desde que tenía uso de conciencia.
+                    También tiene pensado hacerse un tatuaje relacionado con la informática pero las agujas nos son el
+                    mejor amigo de Francisco </p>
+
+            </article>
+            <article>
+                <a name="Estudios"></a>
+                <h1>Estudios</h1>
+                <p>Los estudios de Francisco Parra Navarro son obviamente la ESO, un ciclo grado medio de sistemas
+                    microinformaticos y redes (SMR) en Pulpí, actualmente está estudiando el primer año del ciclo grado
+                    superior de administración de sistemas en red (ASIR) en Huercal Overa, también ha realizado una
+                    serie de cursos en la plataforma "Openwebinars": analisis forense basico de sistemas Windows ,
+                    analisis forense avanzado de sistemas Windows y curso de Microsoft Outlook</p>
+                <article id="estud">
+                    <figure class="container" id="marserena">
+                        <img src="./img/marserena.jpg">
+                        <div class="capa">
+                            <a href="./img/marserena.jpg">
+                                <h3>Ver imagen ampliada</h3>
+                            </a>
+                        </div>
+                    </figure>
+             
+                    <figure class="container" id="curavalera">
+                        <img src="./img/curavalera.jpg">
+                        <div class="capa">
+                            <a href="./img/curavalera.jpg">
+                                <h3>Ver imagen ampliada</h3>
+                            </a>
+                        </div>
+                    </figure>
+                    
+                    
+                </article>
+            </article>
+            </article>
+
+            <article>
+                <a name="Proyectos"></a>
+                <h1>Proyectos</h1>
+                <p>A continuación, se presentan los ultimos proyectos realizados por Francisco Parra Navarro a lo largo de su vida </p>
+              
+
+                    <article id="proyec">
+                        <h1>Proyecto Caronte</h1>
+                        <figure class="container" id="caronte">
+                            <img src="./img/Caronte.png">
+                            <div class="capa">
+                                <a href="./img/Caronte.png">
+                                    <h3>Ver imagen ampliada</h3>
+                                </a>
+                            </div>
+                        </figure>
+                        <h1>Amafron</h1>
+                        <figure class="container" id="amafron">
+                            <img src="./img/amafron.png">
+                            <div class="capa">
+                                <a href="./img/amafron.png">
+                                    <h3>Ver imagen ampliada</h3>
+                                </a>
+                            </div>
+                        </figure>
+                        <h1>Registro de Plantas</h1>
+                        <figure class="container" id="plantas">
+                            <img src="./img/plantas.png">
+                            <div class="capa">
+                                <a href="./img/plantas.png">
+                                    <h3>Ver imagen ampliada</h3>
+                                </a>
+                            </div>
+                        </figure>
+                        <h1>Rescue in the Dungeon</h1>
+                        <figure class="container" id="juego">
+                            <img src="./img/juego.png">
+                            <div class="capa">
+                                <a href="https://scratch.mit.edu/projects/502017441/">
+                                    <h3>Jugar</h3>
+                                </a>
+                            </div>
+                        </figure>
+                    </article>
+            </article>
+            <article>
+                <a name="Aficiones"></a>
+                <h1>Aficiones</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias quisquam, fugit illo quae ab eligendi
+                    quas maxime pariatur saepe distinctio consectetur voluptate rerum unde consequatur id iure deserunt
+                    minus earum.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias quisquam, fugit illo quae ab eligendi
+                    quas maxime pariatur saepe distinctio consectetur voluptate rerum unde consequatur id iure deserunt
+                    minus earum.</p>
+            </article>
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <footer></footer>
+
+    <script>
+
+        function darkMode() {
+            var element = document.body;
+            element.className = "claro";
+
+        }
+        function lightMode() {
+            var element = document.body;
+            element.className = "oscuro";
+        }
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
