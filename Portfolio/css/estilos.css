@@ -151,6 +151,8 @@ html {
   }
   article#estud figure{
     height: 30vh;
+    width: 100%;
+
   }
   article#proyec{
     display: flex;
@@ -158,13 +160,23 @@ html {
     /* justify-content: center;
     align-items: center; */
     width: 100%;
+   
+
+  }
+  article#proyec h1{
+    width: 100%;
   }
   article#proyec figure{
     width: 100%;
     height: 200px;
+    border: solid black 1px;
+    margin-bottom: 60px;
+  }
+  article#proyec p{
+    margin-bottom: 10px;
   }
   article#proyec h1{
-    font-size: 20px;
+    font-size: 25px;
   }
   .container {
     width: 300px;
@@ -247,17 +259,33 @@ html {
     text-shadow: 0.1em 0.1em 0.05em #333;
     height: max-content; 
   }
+  article#estud{
+   
+    flex-flow: row nowrap;
+   
+  }
+  article#estud figure{
+    height: 35vh;
   
+    
+  }
   
 }
 /*===============DESKTOP====================*/
 @media (min-width:900px) {
+ 
   main section article{
     width: 60%;
+    /* background-color: lightblue; */
   }
   article#estud figure{
     height: 35vh;
     width: 45%;
+    
+  }
+  article#estud {
+    display: flex;
+    flex-flow: row wrap;
   }
   article#proyec figure{
 
