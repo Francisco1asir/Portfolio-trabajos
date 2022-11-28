@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@300&family=Lato:wght@100&family=Shadows+Into+Light&display=swap');
 * {
   text-decoration: none;
   padding: 0;
@@ -9,7 +9,7 @@
 
 body {
   /* background-color: white; */
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Anek Devanagari', sans-serif;
 
 }
 
@@ -150,8 +150,8 @@ html {
     width: 100%;
   }
   article#estud figure{
-    height: 30vh;
-    width: 100%;
+    height: 35vh;
+    width: 55vh;
 
   }
   article#proyec{
@@ -186,13 +186,17 @@ html {
     margin: 10px;
     border-radius: 25px;
   }
-  figure#marserena{
-    width: 90%;
-  
+  /* figure#marserena{
+    width: 50%; 
   }
   figure#curavalera{
-    width: 90%;
+    width: 50%;
+  } */
+  article#proyec figure{
+    width: 100%;
+    height: 50%;
   }
+  
   .capa a{
     width: 100%;
     height: 100%;
@@ -234,10 +238,10 @@ html {
 
 /*==============TABLET=====================*/
 @media (min-width:650px) {
-  article#proyec figure{
+  /* article#proyec figure{
     height: 300px;
     
-  }
+  } */
   nav#burger{
     display: none;
   }
@@ -269,28 +273,31 @@ html {
   
     
   }
+  article#estud figure{
+    height: 35vh;
+    width: 55vh;
+
+  }
   
 }
 /*===============DESKTOP====================*/
 @media (min-width:900px) {
- 
+
+
   main section article{
     width: 60%;
     /* background-color: lightblue; */
   }
   article#estud figure{
-    height: 35vh;
-    width: 45%;
+    height: 40vh;
+    width: 50vh;
     
   }
   article#estud {
     display: flex;
     flex-flow: row wrap;
   }
-  article#proyec figure{
 
-    height: 55vh;
-  }
   
   
 }
