@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@300&family=Lato:wght@100&family=Shadows+Into+Light&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@300&family=Lato:wght@100&family=Shadows+Into+Light&display=swap'); */
+
 * {
   text-decoration: none;
   padding: 0;
@@ -29,6 +30,7 @@ html {
     /* position: relative; */
     overflow: hidden;
   }
+
   header nav#lineal {
     display: none;
   }
@@ -41,163 +43,185 @@ html {
     /* height: 65vh; */
     /* background-color: red; */
     color: white;
-    padding-top: 15vh;
+    padding-top: 25vh;
     font-size: 30px;
-    text-shadow: 0.1em 0.1em 0.05em #333;
+    text-shadow: 0.1em 0.1em 0.05em rgb(0, 0, 0);
   }
+
   .titulo h1 {
     /* background-color: red; */
     text-align: center;
-    width: 98%;
-  
+    width: max-content;
+    cursor:pointer;
   }
-  
+
   .titulo i {
     margin-right: 20px;
     color: white;
   }
-  
+.sociales{
+  display: flex;
+  justify-content: center;
+ 
+}
+.sociales a i{
+  color: white;
+  font-size:30px ;
+  margin-right: 20px;
+}
   main section {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
   }
+
   main section article {
     width: 100%;
     padding: 20px;
     background-color: none;
     /* border: 2px solid black; */
   }
-  main button{
-      background: transparent;
-      border: none;
-      font-size: 30px;
-      background-color:rgb(212, 211, 211);
-      box-shadow: 20,10,10,10;
-      cursor: pointer;
-      border-radius: 15px;
-      margin-top:10px ;
-      margin-left:10px ;
-      margin-right:10px ;
-      padding: 10px;
-      width: 50px;
+
+  main button {
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    background-color: rgb(212, 211, 211);
+    box-shadow: 20, 10, 10, 10;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    width: 50px;
   }
-  main button:focus, main button:hover{
-      background-color:lightsalmon;
-      transition: .2s ;
+
+  main button:focus,
+  main button:hover {
+    background-color: lightsalmon;
+    transition: .2s;
   }
- 
+
   .claro {
     background-color: #1f1f1f;
     color: white;
     transition: 0.8s;
   }
+
   .oscuro {
     background-color: whitesmoke;
     color: black;
     transition: 0.8s;
-    
+
   }
-    
-  #check{
+
+  #check {
     display: none;
   }
-    .checkbtn{/*las 3 barras*/
-        display: block;
-        color: white;
-        font-size: 30px;
-        padding: 10px;
-        position: absolute;
-        z-index: 5;
-        cursor: pointer;
-    }
-    ul{
-        position: absolute;
-        width: 100%;
-        height: 75vh;
-        background-color: #1f1f1f0b;
-        backdrop-filter: blur(10px);
-        /* top: 80px; */
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-        z-index: 4;
-        display: flex;
-        padding-top:30px ;
-        padding-left: 30px;
-        justify-content: space-around;
-        align-items: flex-start;
-        flex-flow: column nowrap;
-    }
-    nav ul li{
-        display: block;
-        /* margin: 50px 0; */
-        line-height: 30px;
-    }
-    nav ul li a{
-        font-size: 20px;
-        color: white;
-    }
-    
-    #check:checked ~ ul{
-        left:0;
-    }
-  article#estud{
+
+  .checkbtn {
+    /*las 3 barras*/
+    display: block;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    position: absolute;
+    z-index: 5;
+    cursor: pointer;
+  }
+
+  ul {
+    position: absolute;
+    width: 100%;
+    height: 75vh;
+    background-color: #1f1f1f0b;
+    backdrop-filter: blur(10px);
+    /* top: 80px; */
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 4;
+    display: flex;
+    padding-top: 30px;
+    padding-left: 30px;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+  }
+
+  nav ul li {
+    display: block;
+    /* margin: 50px 0; */
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+    color: white;
+  }
+
+  #check:checked~ul {
+    left: 0;
+  }
+
+  article#estud {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     width: 100%;
   }
-  article#estud figure{
+
+  article#estud figure {
     height: 35vh;
     width: 55vh;
 
   }
-  article#proyec{
+
+
+
+
+  article#proyec {
     display: flex;
     flex-flow: row wrap;
-    /* justify-content: center;
-    align-items: center; */
     width: 100%;
-   
 
   }
-  article#proyec h1{
+
+  article#proyec h1 {
     width: 100%;
+    font-size: 25px;
   }
-  article#proyec figure{
-    width: 100%;
-    height: 200px;
+
+  article#proyec figure {
+    /* height: 35vh; GENERA HUECO EN CONTAINER SI PONEMOS %
+    width: 55vh; */
     border: solid black 1px;
     margin-bottom: 60px;
   }
-  article#proyec p{
+
+  article#proyec p {
     margin-bottom: 10px;
   }
-  article#proyec h1{
-    font-size: 25px;
-  }
+
   .container {
-    width: 300px;
-    height: 300px;
+    /* width: 300px; NI TOCARLO
+    height: 80vh; */
     position: relative;
     overflow: hidden;
     margin: 10px;
     border-radius: 25px;
   }
-  /* figure#marserena{
-    width: 50%; 
-  }
-  figure#curavalera{
-    width: 50%;
-  } */
-  article#proyec figure{
-    width: 100%;
-    height: 50%;
-  }
-  
-  .capa a{
+
+ 
+
+
+
+
+
+
+  .capa a {
     width: 100%;
     height: 100%;
     display: flex;
@@ -206,14 +230,18 @@ html {
     justify-content: center;
     color: white;
     position: absolute;
-  
-  }.container img {
+    cursor: zoom-in;
+
+  }
+
+  .container img {
     width: 100%;
     height: 100%;
     transition: all 0.5s;
-    background-size: cover;
-    
+    /* background-size: cover; */
+
   }
+
   .capa {
     background-color: rgba(0, 0, 0, 0.258);
     backdrop-filter: blur(5px);
@@ -223,81 +251,86 @@ html {
     display: flex;
     padding: 10px;
   }
-  
-  
+
+
   .container:hover img {
     transform: scale(1.09);
   }
+
   .container:hover .capa {
     top: 0;
   }
-  article h1{
+
+  article h1 {
     font-size: 30px;
   }
 }
 
 /*==============TABLET=====================*/
 @media (min-width:650px) {
+
   /* article#proyec figure{
     height: 300px;
     
   } */
-  nav#burger{
+  nav#burger {
     display: none;
   }
-  header nav#lineal{
-    display: block;
-  }
+
+  
+
   header nav#lineal {
     width: 100%;
     display: flex;
     justify-content: space-around;
     padding-top: 10px;
-    /* position: fixed; */
-    /* backdrop-filter: blur(10px); */
+    position: fixed;
+    z-index: 5;
+    backdrop-filter: blur(10px);
     height: 50px;
   }
+
   header nav#lineal a {
     text-decoration: none;
     color: white;
     text-shadow: 0.1em 0.1em 0.05em #333;
-    height: max-content; 
+    height: max-content;
   }
-  article#estud{
-   
+
+  article#estud {
+
     flex-flow: row nowrap;
-   
+
   }
-  article#estud figure{
-    height: 35vh;
-  
-    
-  }
-  article#estud figure{
+
+   article#estud figure {
     height: 35vh;
     width: 55vh;
 
   }
-  
+
 }
+
 /*===============DESKTOP====================*/
 @media (min-width:900px) {
 
 
-  main section article{
+  main section article {
     width: 60%;
     /* background-color: lightblue; */
   }
-  article#estud figure{
+
+  article#estud figure {
     height: 40vh;
     width: 50vh;
-    
+
   }
+
   article#estud {
     display: flex;
     flex-flow: row wrap;
   }
+  
 
-  
-  
+
 }
