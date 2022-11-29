@@ -1,6 +1,5 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@300&family=Lato:wght@100&family=Shadows+Into+Light&display=swap'); */
-
-* {
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Open+Sans&family=Roboto:wght@100&family=Yantramanav&display=swap');
+* { 
   text-decoration: none;
   padding: 0;
   margin: 0;
@@ -10,7 +9,7 @@
 
 body {
   /* background-color: white; */
-  font-family: 'Anek Devanagari', sans-serif;
+  font-family:Open Sans, sans-serif;
 
 }
 
@@ -52,23 +51,27 @@ html {
     /* background-color: red; */
     text-align: center;
     width: max-content;
-    cursor:pointer;
+    cursor: pointer;
   }
 
-  .titulo i {
-    margin-right: 20px;
-    color: white;
+  .sociales {
+    display: flex;
+    justify-content: center;
+
   }
-.sociales{
-  display: flex;
-  justify-content: center;
- 
+article p{
+  font-size: 17px;
 }
-.sociales a i{
-  color: white;
-  font-size:30px ;
-  margin-right: 20px;
-}
+  .sociales a i {
+    color: white;
+    font-size: 30px;
+    margin-right: 20px;
+  }
+  .sociales a i:hover{
+    transition: all .5s;
+    color: orangered;
+  }
+
   main section {
     display: flex;
     flex-flow: column wrap;
@@ -178,7 +181,16 @@ html {
     width: 55vh;
 
   }
+  figure#gif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+figure#gif img{
+  width: 200px;
+  height: 200px;
 
+}
 
 
 
@@ -191,6 +203,7 @@ html {
 
   article#proyec h1 {
     width: 100%;
+    padding-top: 30px;
     font-size: 25px;
   }
 
@@ -198,12 +211,12 @@ html {
     /* height: 35vh; GENERA HUECO EN CONTAINER SI PONEMOS %
     width: 55vh; */
     border: solid black 1px;
-    margin-bottom: 60px;
   }
 
   article#proyec p {
     margin-bottom: 10px;
   }
+  
 
   .container {
     /* width: 300px; NI TOCARLO
@@ -213,13 +226,6 @@ html {
     margin: 10px;
     border-radius: 25px;
   }
-
- 
-
-
-
-
-
 
   .capa a {
     width: 100%;
@@ -264,6 +270,10 @@ html {
   article h1 {
     font-size: 30px;
   }
+#hora{
+  display: none;
+}
+  
 }
 
 /*==============TABLET=====================*/
@@ -277,7 +287,7 @@ html {
     display: none;
   }
 
-  
+
 
   header nav#lineal {
     width: 100%;
@@ -293,7 +303,7 @@ html {
   header nav#lineal a {
     text-decoration: none;
     color: white;
-    text-shadow: 0.1em 0.1em 0.05em #333;
+    text-shadow: 0.1em 0.1em 0.005em rgb(0, 0, 0);
     height: max-content;
   }
 
@@ -303,10 +313,48 @@ html {
 
   }
 
-   article#estud figure {
+  article#estud figure {
     height: 35vh;
     width: 55vh;
 
+  }
+  #decoraciones {
+
+    display: flex;
+  }
+
+  #iluminacion {
+    display: flex;
+    width: 20%;
+  }
+
+  #iluminacion button {
+    height: max-content;
+  }
+
+  #hora {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 15px;
+    width: 80%;
+    margin-right: 30px;
+  }
+
+  .reloj {
+    background-color: rgb(230, 230, 230);
+    color: rgb(112, 112, 112);
+    padding: 10px;
+    height: max-content;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 4px;
+    box-shadow: 3px 2px 2px 2px rgba(15, 28, 38, 0.318);
+    transition: all .5s;
+    cursor:help;
+  }
+  .reloj:hover{
+    /* background-color: red; */
+    transform: scale(1.20);
   }
 
 }
@@ -330,7 +378,7 @@ html {
     display: flex;
     flex-flow: row wrap;
   }
-  
 
+  
 
 }

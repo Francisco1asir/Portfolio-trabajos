@@ -27,7 +27,8 @@
 
             <ul>
                 <li class="hvr-forward"><a href="#Inicio"><i class="fa-solid fa-house"></i><span>Inicio</span></a></li>
-                <li class="hvr-forward"><a href="#Estudios"><i class="fa-solid fa-graduation-cap"></i><span>Estudios</span></a></li>
+                <li class="hvr-forward"><a href="#Estudios"><i
+                            class="fa-solid fa-graduation-cap"></i><span>Estudios</span></a></li>
                 <li class="hvr-forward"><a href="#Sobre"><i class="fa-solid fa-user"></i><span>Sobre mí</span></a></li>
                 <li class="hvr-forward"><a href="#Proyectos"><i
                             class="fa-solid fa-briefcase"></i><span>Proyectos</span></a></li>
@@ -54,20 +55,34 @@
             <a href="https://www.instagram.com/im_the90p/"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://github.com/Francisco1asir/Mis-Proyectos"> <i class="fa-brands fa-github"></i></a>
         </div>
+
     </header>
+
     <main>
-        <button onclick="lightMode()"><i class="fa-solid fa-sun"></i></button>
-        <button onclick="darkMode()"><i class="fa-solid fa-moon"></i></button>
+        <div id="decoraciones">
+            <div id="iluminacion">
+                <button onclick="lightMode()"><i class="fa-solid fa-sun"></i></button>
+                <button onclick="darkMode()"><i class="fa-solid fa-moon"></i></button>
+            </div>
+            <div id="hora">
+                <div class="reloj">
+                    <span id="tiempo">Cargando la hora...</span>
+                </div>
+            </div>
+        </div>
         <a name="Inicio"></a>
+      
         <section>
             <article>
                 <h1>Inicio</h1>
-                <p>En este portfolio se va a reflejar información sobre el estudiante Francisco Parra Navarro, este
+                <p>En este <strong>portfolio</strong> se va a reflejar información sobre el estudiante <strong>Francisco Parra Navarro</strong>, este
                     porfolio está realizado con HTML, CSS y con un poquito de JavaScript aunque en el futuro no se
                     descarta la necesidad de añadir otro tipo de lenguajes de programación o incluso bases de datos. La
                     fecha de creación de este portfolio es el 19/11/2022 y se sigue actualizando con los días. Se
                     pretende subir este porfolio a una VPS o dominio público para que se visible por todo el mundo </p>
-                <!-- <img src="./img/saludo.gif"> -->
+                <figure id="gif">
+                    <img src="./img/saludo.gif">
+                </figure>
                 <a name="Sobre"></a>
             </article>
 
@@ -175,44 +190,12 @@
             <article>
                 <a name="Aficiones"></a>
                 <h1>Aficiones</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias quisquam, fugit illo quae ab eligendi
-                    quas maxime pariatur saepe distinctio consectetur voluptate rerum unde consequatur id iure deserunt
-                    minus earum.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias quisquam, fugit illo quae ab eligendi
-                    quas maxime pariatur saepe distinctio consectetur voluptate rerum unde consequatur id iure deserunt
-                    minus earum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt rem impedit enim quae placeat magnam laudantium veniam ut, iste vel obcaecati laboriosam libero fuga hic atque soluta mollitia nemo consequuntur.</p>
             </article>
 
 
 
-
-
-
-
-
-
     </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -232,8 +215,24 @@
         }
 
 
+        let html = document.getElementById("tiempo");
 
+        setInterval(function () {
+            tiempo = new Date();
+            horas = tiempo.getHours();
+            minutos = tiempo.getMinutes();
+            segundos = tiempo.getSeconds();
 
+            //evitar los 0 o numeros individuales
+            if (horas < 10)
+                horas = "0" + horas;
+            if (minutos < 10)
+                minutos = "0" + minutos;
+            if (segundos < 10)
+                segundos = "0" + segundos;
+
+            html.innerHTML = horas + " : " + minutos + " : " + segundos;
+        }, 1000);
     </script>
 
 
