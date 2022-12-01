@@ -53,6 +53,61 @@ html {
     width: max-content;
     cursor: pointer;
   }
+  .mkinainicio {
+    position: relative;
+    font-size: 40px;
+  }
+
+  .mkinainicio::after {
+    content: "";
+    border-left: 1px solid black;
+    background-color: white;
+    right: 0;
+    height: 100%;
+    width: 7ch;
+    /*Por cada caracter*/
+    position: absolute;
+    animation: typing 1.5s infinite alternate steps(7);
+    transition: 0.8s;
+
+  }
+
+  @keyframes typing {
+    from {
+      width: 100%;
+    }
+
+    to {
+      width: 0;
+    }
+  }
+  .mkinainicio2 {
+    position: relative;
+    font-size: 40px;
+  }
+
+  .mkinainicio2::after {
+    content: "";
+    border-left: 1px solid white;
+    background-color: #1f1f1f;
+    right: 0;
+    height: 100%;
+    width: 7ch;
+    /*Por cada caracter*/
+    position: absolute;
+    animation: typing 1.5s infinite alternate steps(7);
+
+  }
+
+  @keyframes typing {
+    from {
+      width: 100%;
+    }
+
+    to {
+      width: 0;
+    }
+  }
 
   .sociales {
     display: flex;
@@ -113,7 +168,7 @@ article p{
   }
 
   .oscuro {
-    background-color: whitesmoke;
+    background-color: white;
     color: black;
     transition: 0.8s;
 

@@ -61,8 +61,8 @@
     <main>
         <div id="decoraciones">
             <div id="iluminacion">
-                <button onclick="lightMode()"><i class="fa-solid fa-sun"></i></button>
-                <button onclick="darkMode()"><i class="fa-solid fa-moon"></i></button>
+                <button id="light" onclick="lightMode()"><i class="fa-solid fa-sun"></i></button>
+                <button id="dark" onclick="darkMode()"><i class="fa-solid fa-moon"></i></button>
             </div>
             <div id="hora">
                 <div class="reloj">
@@ -71,11 +71,12 @@
             </div>
         </div>
         <a name="Inicio"></a>
-      
+
         <section>
             <article>
-                <h1>Inicio</h1>
-                <p>En este <strong>portfolio</strong> se va a reflejar información sobre el estudiante <strong>Francisco Parra Navarro</strong>, este
+                <span id="ini" class="mkinainicio">Inicio .</span>
+                <p>En este <strong>portfolio</strong> se va a reflejar información sobre el estudiante <strong>Francisco
+                        Parra Navarro</strong>, este
                     porfolio está realizado con HTML, CSS y con un poquito de JavaScript aunque en el futuro no se
                     descarta la necesidad de añadir otro tipo de lenguajes de programación o incluso bases de datos. La
                     fecha de creación de este portfolio es el 19/11/2022 y se sigue actualizando con los días. Se
@@ -190,19 +191,31 @@
             <article>
                 <a name="Aficiones"></a>
                 <h1>Aficiones</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt rem impedit enim quae placeat magnam laudantium veniam ut, iste vel obcaecati laboriosam libero fuga hic atque soluta mollitia nemo consequuntur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt rem impedit enim quae placeat
+                    magnam laudantium veniam ut, iste vel obcaecati laboriosam libero fuga hic atque soluta mollitia
+                    nemo consequuntur.</p>
             </article>
 
 
 
     </main>
-
-
-
-
     <footer></footer>
 
     <script>
+        /*Sacamos las variables de el boton de luz y oscuro y del texto Inicio*/
+        const light = document.getElementById('light');
+        const dark = document.getElementById('dark');
+        const ini = document.getElementById('ini');
+
+        light.addEventListener('click', function () {
+            ini.classList.remove('mkinainicio2');
+            ini.classList.add('mkinainicio');
+        });
+
+        dark.addEventListener('click', function () {
+           
+            ini.classList.add('mkinainicio2');  
+        });
 
         function darkMode() {
             var element = document.body;
