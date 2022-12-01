@@ -40,8 +40,8 @@
 
         <nav id="lineal">
             <a href="#Inicio" class="hvr-buzz">Inicio</a>
-            <a href="#Estudios" class="hvr-buzz">Estudios</a>
             <a href="#Sobre" class="hvr-buzz">Sobre mí</a>
+            <a href="#Estudios" class="hvr-buzz">Estudios</a>
             <a href="#Proyectos" class="hvr-buzz">Proyectos</a>
             <a href="#Aficiones" class="hvr-buzz">Aficiones</a>
         </nav>
@@ -61,8 +61,8 @@
     <main>
         <div id="decoraciones">
             <div id="iluminacion">
-                <button id="light" onclick="lightMode()"><i class="fa-solid fa-sun"></i></button>
-                <button id="dark" onclick="darkMode()"><i class="fa-solid fa-moon"></i></button>
+                <button id="light" onclick="lightMode()" class="ligon"><i class="fa-solid fa-sun"></i></button>
+                <button id="dark" onclick="darkMode()" class="darkoff"><i class="fa-solid fa-moon"></i></button>
             </div>
             <div id="hora">
                 <div class="reloj">
@@ -213,8 +213,21 @@
         });
 
         dark.addEventListener('click', function () {
-           
             ini.classList.add('mkinainicio2');  
+        });
+
+/*PARA MANTENER EL COLOR EN LOS BOTONES UNA VEZ LE DES*/
+        light.addEventListener('click', function () {
+            dark.classList.remove('darkon');  
+            dark.classList.add('darkoff');
+            light.classList.remove('ligoff');  
+            light.classList.add('ligon');  
+        
+        });
+        dark.addEventListener('click', function () {
+            light.classList.remove('ligon');  
+            light.classList.add('ligoff');  
+            dark.classList.add('darkon');  
         });
 
         function darkMode() {

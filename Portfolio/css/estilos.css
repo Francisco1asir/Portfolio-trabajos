@@ -67,7 +67,7 @@ html {
     width: 7ch;
     /*Por cada caracter*/
     position: absolute;
-    animation: typing 1.5s infinite alternate steps(7);
+    animation: typing 2s infinite alternate steps(7);
     transition: 0.8s;
 
   }
@@ -95,7 +95,7 @@ html {
     width: 7ch;
     /*Por cada caracter*/
     position: absolute;
-    animation: typing 1.5s infinite alternate steps(7);
+    animation: typing 2s infinite alternate steps(7);
 
   }
 
@@ -155,11 +155,31 @@ article p{
     width: 50px;
   }
 
-  main button:focus,
-  main button:hover {
-    background-color: lightsalmon;
-    transition: .2s;
-  }
+.darkoff{
+  background-color:rgb(192, 192, 192);
+  color: black;
+  transition: .5s;
+
+}
+.darkon{
+  background-color:darkslateblue;
+  color: white;
+  transition: .5s;
+
+}
+.ligon{
+  background-color: rgb(255, 255, 29);
+  color: black;
+  transition: .5s;
+
+}
+
+.ligoff{
+  background-color:rgb(192, 192, 192);  
+  color: black;
+  transition: .5s;
+
+}
 
   .claro {
     background-color: #1f1f1f;
