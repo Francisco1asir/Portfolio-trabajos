@@ -10,11 +10,56 @@ body {
   background-repeat: no-repeat;
   font-family: "Calibri";
 }
+
 html,
 body {
   max-width: 100% !important;
   overflow-x: hidden !important;
+
 }
+
+.articookfondo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  z-index: 51;
+  background-color: rgba(0, 0, 0, 0.753);
+  position: fixed;
+}
+
+.articookoff {
+  display: none;
+}
+
+#cookies {
+
+  position: fixed;
+  background-color: lightgrey;
+  width: 500px;
+  bottom: 40%;
+  height: max-content;
+  z-index: 50;
+  padding: 20px;
+border-radius: 15px;
+  box-shadow: 15px 10px 30px 5px black;
+  font-size: 20px;
+}
+
+#cookies button {
+  background-color: white;
+  border: none;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 20px;
+  width: 200px;
+}
+
+.cookiesoff {
+  display: none;
+}
+
 /* main { 
    background-color: grey;
   background-image: url(../img/anillosdelpoder.jpg);
@@ -38,16 +83,18 @@ header nav#nav1 {
   /* background-color: red;  */
   display: flex;
   align-items: center;
-  flex-flow:row wrap;
+  flex-flow: row wrap;
   width: 100%;
   background-color: RGB(19, 25, 33);
   padding-bottom: 10px;
 }
-header nav#nav1 img{
+
+header nav#nav1 img {
   /* background-color: green; */
   width: 250px;
   padding-top: 20px;
 }
+
 header nav#nav2 {
   background-color: RGB(35, 47, 62);
   width: 100%;
@@ -56,7 +103,8 @@ header nav#nav2 {
   flex-wrap: wrap;
   align-items: center;
   /* height: 50px; */
-  padding: 10px; /*DETERMINAMOS EL HEIGHT CON UN PADDING PORQUE SI NO SE NOS VA A TOMAR PORCULO TODO*/
+  padding: 10px;
+  /*DETERMINAMOS EL HEIGHT CON UN PADDING PORQUE SI NO SE NOS VA A TOMAR PORCULO TODO*/
   padding-left: 5px;
 }
 
@@ -66,6 +114,7 @@ header nav#nav2 a {
   color: rgba(255, 255, 255, 0.712);
   padding-left: 10px;
 }
+
 main {
   display: flex;
   flex-direction: row;
@@ -83,13 +132,7 @@ nav#nav1 input {
   background-repeat: no-repeat;
   background-position: right;
 }
-@media (max-width:650px) {
-  nav#nav1 input {
-    width: 50%;
-   
-  }
-  
-}
+
 
 
 nav#nav1 a {
@@ -100,6 +143,7 @@ nav#nav1 a {
   color: rgba(255, 255, 255, 0.712);
   font-size: 15px;
 }
+
 /* @media (max-width:1300px){
         img{
             height:62px;
@@ -121,6 +165,7 @@ header nav a:after {
 header nav a:hover:after {
   width: 100%;
 }
+
 header nav#nav1 a:hover {
   color: white;
 }
@@ -138,6 +183,7 @@ header div a:after {
 header div a:hover:after {
   width: 100%;
 }
+
 header div a:hover {
   color: white;
 }
@@ -150,8 +196,10 @@ header div a:hover {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 .cajas {
-  min-height: max-content; /*Muy importante para evitar que la imagen se salga de la caja*/
+  min-height: max-content;
+  /*Muy importante para evitar que la imagen se salga de la caja*/
   width: 300px;
   background-color: white;
   margin: 15px;
@@ -168,8 +216,10 @@ header div a:hover {
   /* padding-bottom: 15%; */
   /* overflow: scroll; */
 }
+
 .cajas-dobles {
-  min-height: 270px; /*Muy importante para evitar que la imagen se salga de la caja*/
+  min-height: 270px;
+  /*Muy importante para evitar que la imagen se salga de la caja*/
   width: 300px;
   background-color: white;
   margin: 15px;
@@ -182,6 +232,7 @@ header div a:hover {
   justify-content: center;
   box-shadow: 5px 5px 18px;
 }
+
 .cajas-dobles img {
   width: 120px;
   height: 120px;
@@ -191,9 +242,11 @@ max-height: 90%; */
   margin-right: 10px;
   margin-top: 10px;
 }
+
 .cajas-dobles h2 {
   width: 100%;
 }
+
 .cajas img {
   width: 100%;
   height: 230px;
@@ -201,20 +254,24 @@ max-height: 90%; */
 max-height: 90%; */
   border-radius: 10px;
 }
+
 .cajas h2 {
   /* min-height: 10%; */
   padding-bottom: 15px;
   /* background-color: red; */
 }
+
 .cajas,
 .cajas-dobles {
   /*Para que al quitar el cursor vuelva a su posicion original de forma progresiva*/
   transition: all 0.5s;
 }
+
 .cajas:hover,
 .cajas-dobles:hover {
   transform: scale(1.08);
 }
+
 article a {
   text-decoration: none;
 }
@@ -249,10 +306,12 @@ background-image: red;
   overflow: auto;
   margin: 15px;
 }
+
 .circulo {
   padding-top: 55px;
   cursor: pointer;
 }
+
 .container {
   width: 180px;
   height: 180px;
@@ -262,6 +321,7 @@ background-image: red;
   background-color: RGB(19, 25, 33);
   margin: 10px;
 }
+
 .container img {
   width: 100%;
   height: 100%;
@@ -269,6 +329,7 @@ background-image: red;
   /* height: auto; */
   transition: all 0.5s;
 }
+
 .capa {
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
@@ -281,7 +342,8 @@ background-image: red;
   justify-content: center;
   padding: 10px;
 }
-.capa a{
+
+.capa a {
   width: 100%;
   height: 100%;
   display: flex;
@@ -295,6 +357,7 @@ background-image: red;
 .container:hover img {
   transform: scale(1.09);
 }
+
 .container:hover .capa {
   top: 0;
 }
@@ -303,7 +366,8 @@ background-image: red;
   position: absolute;
   padding: 10px;
   /* background-color: red; */
-  width: 90%; /*No poner un 100% porque sale una barra de desplazamiento horizontal que da puto asco visual*/
+  width: 90%;
+  /*No poner un 100% porque sale una barra de desplazamiento horizontal que da puto asco visual*/
   height: max-content;
 }
 
@@ -345,7 +409,8 @@ video {
   height: 100%;
   top: 0;
   left: 0;
-  z-index: -1; /*PERMITE QUE LAS CAJAS SE PONGAN ENCIMA DEL VIDEO*/
+  z-index: -1;
+  /*PERMITE QUE LAS CAJAS SE PONGAN ENCIMA DEL VIDEO*/
   position: absolute;
   object-fit: cover;
 }
@@ -353,24 +418,29 @@ video {
 main {
   width: 100%;
   height: auto;
-  position: relative; /*Muy importante para que el video no se desborde*/
+  position: relative;
+  /*Muy importante para que el video no se desborde*/
   /* overflow: hidden; */
 }
+
 .cartel img {
   width: 1300px;
   height: 380px;
 }
+
 .cartel {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 @media (max-width: 1000px) {
   .cartel img {
     width: 500px;
     height: 150px;
   }
 }
+
 .container-cuadrado {
   width: 400px;
   height: 240px;
@@ -381,18 +451,22 @@ main {
   align-items: center;
   justify-content: center;
 }
+
 .container-cuadrado h3 {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
+
 .container-cuadrado img {
   width: 60%;
   height: 90%;
   padding: 10px;
 }
+
 .todocir-cuadrado {
-  height: 380px; /*la altura de el texto con los cuadrados*/
+  height: 380px;
+  /*la altura de el texto con los cuadrados*/
   background-color: white;
   display: flex;
 
@@ -402,6 +476,7 @@ main {
 
   margin: 15px;
 }
+
 .info-cuadrado {
   display: flex;
   flex-wrap: nowrap;
@@ -410,6 +485,7 @@ main {
   background-color: none;
   width: 100%;
 }
+
 .info-cuadrado p {
   background-color: #cc0c39;
   color: white;
@@ -418,10 +494,12 @@ main {
   width: max-content;
   margin-right: 5px;
 }
+
 .info-cuadrado h3 {
   color: #d20c39;
 }
-button {
+
+button#volver {
   background-color: RGB(55, 71, 90);
   width: 100%;
   color: white;
@@ -429,12 +507,14 @@ button {
   font-size: 17px;
   border: none;
 }
+
 footer {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   background-color: RGB(35, 47, 62);
 }
+
 /* footer nav#allfooter{
   display: flex;
 } */
@@ -445,6 +525,7 @@ footer nav#conocenos {
   display: flex;
   flex-flow: column wrap;
 }
+
 footer nav#conocenos a {
   color: rgb(195, 195, 195);
   text-decoration: none;
@@ -455,12 +536,15 @@ footer nav#conocenos a {
 footer nav#conocenos a:hover {
   text-decoration: underline;
 }
+
 footer nav#ganadinero a:hover {
   text-decoration: underline;
 }
+
 footer nav#pagos a:hover {
   text-decoration: underline;
 }
+
 footer nav#ayuda a:hover {
   text-decoration: underline;
 }
@@ -469,12 +553,14 @@ footer nav#conocenos h2 {
   color: white;
   padding-bottom: 10px;
 }
+
 footer nav#ganadinero {
   display: flex;
   flex-flow: column wrap;
   width: 250px;
   padding: 40px;
 }
+
 footer nav#ganadinero a {
   color: rgb(195, 195, 195);
   text-decoration: none;
@@ -486,37 +572,44 @@ footer nav#ganadinero h2 {
   color: white;
   padding-bottom: 10px;
 }
+
 footer nav#pagos {
   display: flex;
   flex-flow: column wrap;
   width: 250px;
   padding: 40px;
 }
+
 footer nav#pagos a {
   color: rgb(195, 195, 195);
   text-decoration: none;
   padding-bottom: 10px;
 
 }
+
 footer nav#pagos h2 {
   color: white;
   padding-bottom: 10px;
 }
+
 footer nav#ayuda {
   display: flex;
   flex-flow: column wrap;
   width: 250px;
   padding: 40px;
 }
-footer nav#ayuda a{
+
+footer nav#ayuda a {
   color: rgb(195, 195, 195);
   text-decoration: none;
   padding-bottom: 10px
 }
+
 footer nav#ayuda h2 {
   color: white;
   padding-bottom: 10px;
 }
+
 footer figure {
   width: 100%;
   height: 105px;
@@ -528,10 +621,12 @@ footer figure {
   border-width: 0.1px;
   /* background-color: red; */
 }
+
 footer figure img {
   width: 100px;
   height: 30px;
 }
+
 footer nav#paises {
   display: flex;
   flex-flow: row wrap;
@@ -547,6 +642,7 @@ footer nav#paises a {
   font-weight: lighter;
   text-decoration: none;
 }
+
 footer nav#paises a:hover {
   text-decoration: underline;
 }
@@ -559,6 +655,7 @@ footer section {
   justify-content: center;
   align-items: center;
 }
+
 footer section article {
   color: rgba(255, 255, 255, 0.801);
   margin-right: 65px;
@@ -566,15 +663,18 @@ footer section article {
   font-size: 17px;
   margin: 12px;
 }
+
 section#politica {
   color: white;
   display: flex;
   flex-flow: row wrap;
   padding-top: 30px;
 }
+
 section#politica h4 {
   margin-right: 20px;
 }
+
 section#politica h5 {
   margin-right: 20px;
 }
@@ -582,38 +682,59 @@ section#politica h5 {
 footer section article h6 {
   color: RGB(140, 147, 153);
 }
-footer marquee{
+
+footer marquee {
   background-color: RGB(19, 26, 34);
   width: 100%;
 }
-footer marquee h4{
+
+footer marquee h4 {
   color: white;
   background-color: RGB(19, 26, 34);
   width: 100%;
   text-align: center;
 }
+
 @media (max-width: 450px) {
   .cajas {
     min-height: 150px;
     width: 150px;
   }
+
   .cajas img {
     width: 100%;
     height: 120px;
   }
+
   .cajas h2 {
     font-size: 20px;
   }
+
   .cajas-dobles {
     min-height: 150px;
     width: 250px;
   }
+
   .cajas-dobles img {
     width: 100px;
     height: 120px;
   }
+
   .cajas-dobles h2 {
     width: 100%;
     font-size: 25px;
   }
+}
+
+@media (max-width:650px) {
+  nav#nav1 input {
+    width: 50%;
+
+  }
+
+  #cookies {
+    width: 300px;
+    bottom: 20%;
+  }
+
 }
