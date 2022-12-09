@@ -55,7 +55,7 @@ html {
   }
   .mkinainicio {
     position: relative;
-    font-size: 40px;
+    font-size: 40px;  
   }
 
   .mkinainicio::after {
@@ -67,7 +67,7 @@ html {
     width: 7ch;
     /*Por cada caracter*/
     position: absolute;
-    animation: typing 2s infinite alternate steps(7);
+    animation: typing 2s infinite alternate steps(6);
     transition: 0.8s;
 
   }
