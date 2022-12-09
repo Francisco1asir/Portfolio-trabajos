@@ -12,13 +12,25 @@
   <title>Amafron</title>
 </head>
 
+
 <body>
+  <article id="articook" class="articookfondo">
+  <div id="cookies">
+    <h3>Esta página web usa cookies</h3>
+    <p>Las cookies de este sitio web se usan para personalizar el contenido y los anuncios, ofrecer funciones de redes
+      sociales y analizar el tráfico. Además, compartimos información sobre el uso que haga del sitio web con nuestros
+      partners de redes sociales, publicidad y análisis web, quienes pueden combinarla con otra información que les haya
+      proporcionado o que hayan recopilado a partir del uso que haya hecho de sus servicios.</p>
+      <figure><img src="../img/cookielogo.jpg"></figure>
+    <button id="cookacep">Aceptar</button>
+  </div>
+</article>
   <header>
 
     <nav id="nav1">
       <img src="../img/amafron.png" />
       <a href="#">
-        <span>Elige tus <br/>
+        <span>Elige tus <br />
           productos</span>
       </a>
 
@@ -157,7 +169,7 @@
         <img src="../img/caja3.jpg" />
         <div class="capa">
           <a href="#">
-          <h3>Naturaleza</h3>
+            <h3>Naturaleza</h3>
           </a>
         </div>
       </div>
@@ -168,7 +180,7 @@
         <img src="../img/caja4.jpg" />
         <div class="capa">
           <a href="#">
-          <h3>Amafron Music</h3>
+            <h3>Amafron Music</h3>
           </a>
         </div>
       </div>
@@ -202,7 +214,7 @@
         <div class="capa">
           <a href="#">
             <h3>Pintura</h3>
-            </a>
+          </a>
         </div>
       </div>
     </article>
@@ -213,7 +225,7 @@
         <div class="capa">
           <a href="#">
             <h3>Fashion</h3>
-            </a>
+          </a>
         </div>
       </div>
     </article>
@@ -224,7 +236,7 @@
         <div class="capa">
           <a href="#">
             <h3>Xbox</h3>
-            </a>
+          </a>
         </div>
       </div>
     </article>
@@ -235,7 +247,7 @@
         <div class="capa">
           <a href="#">
             <h3>Amafron Prime</h3>
-            </a>
+          </a>
         </div>
       </div>
     </article>
@@ -246,7 +258,7 @@
         <div class="capa">
           <a href="#">
             <h3>Amafron News</h3>
-            </a>
+          </a>
         </div>
       </div>
     </article>
@@ -915,7 +927,7 @@
       </div>
     </article>
   </div>
-  <button>Volver arriba</button>
+  <button id="volver">Volver arriba</button>
   <footer>
 
     <nav id="conocenos">
@@ -1033,17 +1045,19 @@
     </marquee>
 
   </footer>
-  <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init();
-  </script> -->
-  <!-- <div data-aos="fade-up"></div> 
-    <div class="container">
-        <img src="../img/caja1.jpg" />
-        <div class="capa">
-          <h3>Flores</h3>
-        </div>
-      </div> -->
+
+    const cookies = document.getElementById('cookies');
+    const cookacep = document.getElementById('cookacep');
+    const articook = document.getElementById('articook');
+    cookacep.addEventListener('click', function () {
+      cookies.classList.remove('cookies');
+      cookies.classList.add('cookiesoff');
+      articook.classList.add('articookoff');
+    });
+
+  </script>
+
 </body>
 
 </html>

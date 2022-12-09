@@ -382,11 +382,11 @@ figure#gif img{
     height: max-content;
   }
 
-  article#estud {
+  /* article#estud {
 
     flex-flow: row nowrap;
 
-  }
+  } */
 
   article#estud figure {
     height: 35vh;
@@ -431,6 +431,15 @@ figure#gif img{
     /* background-color: red; */
     transform: scale(1.20);
   }
+  article#afic{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  article#afic figure{
+    height: 27vh;
+    width: 45%;
+  }
 
 }
 
@@ -453,7 +462,15 @@ figure#gif img{
     display: flex;
     flex-flow: row wrap;
   }
-
-  
+  article#afic{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  article#afic figure{
+    height: 40vh;
+    width: 50vh;
+  }
 
 }

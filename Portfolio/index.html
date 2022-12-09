@@ -177,7 +177,8 @@
                     </figure>
                     <h1>Rescue in the Dungeon</h1>
                     <p>Rescue in the Dungeon, aunque no es una página como tal, es un juego creado en la plataforma
-                        Scratch </p>
+                        Scrath que dió a Francisco y a su grupo el primer puesto en la 6º edición del concurso de
+                        videojuegos organizado por la universidad de Almería en la modalidad de ciclos formativos </p>
                     <figure class="container" id="juego">
                         <img src="./img/juego.png">
                         <div class="capa">
@@ -191,9 +192,28 @@
             <article>
                 <a name="Aficiones"></a>
                 <h1>Aficiones</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt rem impedit enim quae placeat
-                    magnam laudantium veniam ut, iste vel obcaecati laboriosam libero fuga hic atque soluta mollitia
-                    nemo consequuntur.</p>
+                <p>Las aficiones de Francisco Parra son muchas, desde la informatica, los videojuegos, los animales, el
+                    tenis de mesa, la música electrónica, los cuerpos celestes, etc. Pero lo que más le gusta a
+                    Francisco es la informática una afición que puede tener a Francisco horas y horas sumergido en ese
+                    mundillo tan tecnológico.</p>
+                    <article id="afic">
+                    <figure class="container" id="curavalera">
+                        <img src="./img/informatica.jpg">
+                        <div class="capa">
+                            <a href="./img/informatica.jpg">
+                                <h3>Ver imagen ampliada</h3>
+                            </a>
+                        </div>
+                    </figure>
+                    <figure class="container" id="curavalera">
+                        <img src="./img/ark.png">
+                        <div class="capa">
+                            <a href="./img/ark.png">
+                                <h3>Ver imagen ampliada</h3>
+                            </a>
+                        </div>
+                    </figure>
+                </article>
             </article>
 
 
@@ -213,21 +233,21 @@
         });
 
         dark.addEventListener('click', function () {
-            // ini.classList.add('mkinainicio2');  
+            ini.classList.add('mkinainicio2');  
         });
 
-/*PARA MANTENER EL COLOR EN LOS BOTONES UNA VEZ LE DES*/
+        /*PARA MANTENER EL COLOR EN LOS BOTONES UNA VEZ LE DES*/
         light.addEventListener('click', function () {
-            dark.classList.remove('darkon');  
+            dark.classList.remove('darkon');
             dark.classList.add('darkoff');
-            light.classList.remove('ligoff');  
-            light.classList.add('ligon');  
-        
+            light.classList.remove('ligoff');
+            light.classList.add('ligon');
+
         });
         dark.addEventListener('click', function () {
-            light.classList.remove('ligon');  
-            light.classList.add('ligoff');  
-            dark.classList.add('darkon');  
+            light.classList.remove('ligon');
+            light.classList.add('ligoff');
+            dark.classList.add('darkon');
         });
 
         function darkMode() {
