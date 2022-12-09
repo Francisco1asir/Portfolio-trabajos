@@ -228,11 +228,12 @@
         const ini = document.getElementById('ini');
 
         light.addEventListener('click', function () {
-            // ini.classList.remove('mkinainicio2');
+            ini.classList.remove('mkinainicio2');
             ini.classList.add('mkinainicio');
         });
 
         dark.addEventListener('click', function () {
+            ini.classList.remove('mkinainicio');
             ini.classList.add('mkinainicio2');  
         });
 

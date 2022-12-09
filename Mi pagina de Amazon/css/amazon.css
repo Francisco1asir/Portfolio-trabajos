@@ -63,10 +63,13 @@ body {
 
 #cookies p {
   width: 65%;
+  
 }
 
 #cookies figure {
   width: 35%;
+  display: flex;
+  justify-content: center;
 /* background-color: green; */
 
 }
@@ -76,20 +79,6 @@ body {
   height: 150px;
 }
 
-@media (max-width:650px) {
-  nav#nav1 input {
-    width: 50%;
-
-  }
-
-  #cookies p {
-    width: 100%;
-
-  }
-
- 
- 
-}
 
 
 #cookies button {
@@ -97,10 +86,26 @@ body {
   border: none;
   height: 40px;
   margin-top: 10px;
-  border-radius: 20px;
+  border-radius: 40px;
   width: 200px;
+  transition: .9s;
 }
+#cookies button:hover{
 
+  /* background-color: rgb(198, 204, 209); */
+  border-radius: 0px;
+
+}
+#cookies button i{
+  font-size: 15px;
+}
+#cookies button:hover i{
+
+  /* background-color: rgb(198, 204, 209); */
+ color: green;
+
+
+}
 .cookiesoff {
   display: none;
 }
@@ -769,4 +774,25 @@ footer marquee h4 {
     width: 100%;
     font-size: 25px;
   }
+}
+@media (max-width:650px) {
+  nav#nav1 input {
+    width: 50%;
+
+  }
+
+  #cookies p {
+    width: 100%;
+
+  }
+  #cookies figure {
+    width: 100%;
+  
+  }
+ #cookies figure img{
+  width: 40%;
+  height: 130px;
+
+ }
+ 
 }
