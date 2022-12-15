@@ -3,7 +3,9 @@
   margin: 0;
   padding: 0;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   background: RGB(234, 237, 237);
   background-size: cover;
@@ -37,10 +39,9 @@ body {
 #cookies {
 
   /* position: fixed; */
-  background-color: RGB(252, 176, 64);
+  background-color: rgb(241, 165, 66);
   width: 700px;
   /* bottom: 40%; */
-
   height: max-content;
   z-index: 50;
   padding: 20px;
@@ -88,7 +89,8 @@ body {
   margin-top: 10px;
   border-radius: 40px;
   width: 200px;
-  transition: .9s;
+  transition: .5s;
+  cursor: pointer;
 }
 #cookies button:hover{
 
@@ -549,13 +551,23 @@ main {
   color: #d20c39;
 }
 
-button#volver {
+nav#volver {
   background-color: RGB(55, 71, 90);
   width: 100%;
   color: white;
   height: 50px;
-  font-size: 17px;
+  font-size: 20px;
   border: none;
+  display: flex;
+  justify-content: center;
+  padding-top: 12px;
+}
+nav#volver a{
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  text-align: center;
+
 }
 
 footer {
