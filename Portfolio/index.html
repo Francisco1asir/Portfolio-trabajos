@@ -16,9 +16,7 @@
 </head>
 
 <body>
-    <header>
-
-
+     <header>
         <nav id="burger">
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
@@ -194,7 +192,7 @@
                 <h1>Aficiones</h1>
                 <p>Las aficiones de Francisco Parra son muchas, desde la informatica, los videojuegos, los animales, el
                     tenis de mesa, la música electrónica, los cuerpos celestes, etc. Pero lo que más le gusta a
-                    Francisco es la informática una afición que puede tener a Francisco horas y horas sumergido en ese
+                    Francisco es la <strong>Informática</strong> una afición que puede tener a Francisco horas y horas sumergido en ese
                     mundillo tan tecnológico.</p>
                     <article id="afic">
                     <figure class="container" id="curavalera">
@@ -220,13 +218,15 @@
 
     </main>
     <footer></footer>
+</body>
 
     <script>
         /*Sacamos las variables de el boton de luz y oscuro y del texto Inicio*/
         const light = document.getElementById('light');
         const dark = document.getElementById('dark');
         const ini = document.getElementById('ini');
-
+        const global = document.getElementById('global');
+   
         light.addEventListener('click', function () {
             ini.classList.remove('mkinainicio2');
             ini.classList.add('mkinainicio');
@@ -282,7 +282,5 @@
         }, 1000);
     </script>
 
-
-</body>
 
 </html>
